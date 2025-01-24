@@ -1,0 +1,141 @@
+/* styles.css */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url('dronewave1.jpg'); /* Use your local image file or an online URL */
+    background-size: cover; /* Cover the entire page */
+    background-position: center; /* Center the background image */
+    height: 100%; /* Ensure full page height */
+    background-attachment: fixed; /* Optional: Fix the background image during scroll */
+}
+
+.links-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Adjust based on your design needs */
+    gap: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+.link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    text-decoration: none;
+    color: #333;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.link img {
+    width: 100px; /* Adjust based on your preference */
+    height: auto; /* Maintain aspect ratio */
+    vertical-align: middle; /* Align the image with the text */
+    margin-right: 10px; /* Add space to the right of the image, adjust as needed */
+}
+
+
+.link:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.weather-widget img {
+    width: 50px; /* Adjust as needed */
+    vertical-align: middle;
+}
+
+.weather-widget div {
+    margin-top: 10px;
+}
+
+
+.weather-widget, .todo-list, .calendar {
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+    .links-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .link, .weather-widget, .todo-list, .calendar {
+        padding: 20px;
+    }
+}
+
+.link, .todo-list li {
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.link:hover, .todo-list li:hover {
+    background-color: #eaeaea;
+    transform: translateY(-3px);
+}
+
+:root {
+    --primary-color: #4CAF50;
+    --text-color: #333;
+    --background-color: #fff;
+}
+
+body {
+    color: var(--text-color);
+    background-color: #f4f4f4;
+}
+
+.link, .weather-widget, .todo-list, .calendar, .todo-list li {
+    background-color: var(--background-color);
+}
+
+.link, .weather-widget, .todo-list, .calendar {
+    font-size: 18px;
+}
+
+.main-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: start; /* Align items at the top */
+    padding-top: 20px; /* Add space on top */
+}
+
+.search-container {
+    margin-left: 20px; /* Add more space between the calendar and the search bar */
+    flex-grow: 1; /* Allow it to take up remaining space if needed */
+    max-width: 400px; /* Limit the search bar width for better centering */
+    text-align: center; /* Center the contents of the search container */
+}
+
+.search-container form {
+    display: flex;
+    align-items: center;
+}
+
+.search-container input[type="text"] {
+    padding: 8px;
+    margin-right: 10px;
+    width: 200px; /* Adjust based on your preference */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.search-container button {
+    padding: 8px 15px;
+    background-color: #f8f8f8;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.search-container button:hover {
+    background-color: #e7e7e7;
+}
+

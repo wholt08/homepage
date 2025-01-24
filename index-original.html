@@ -1,0 +1,50 @@
+<!-- Index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="shortcut icon" href="skull.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <!--Weather-->
+    <a class="weatherwidget-io" href="https://forecast7.com/en/47d61n122d33/seattle/?unit=us" data-label_1="SEATTLE" data-label_2="WEATHER" data-icons="Climacons Animated" data-days="5" data-theme="weather_one" >SEATTLE WEATHER</a>
+    <script>
+    !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+    </script>
+
+    <!--Links-->
+    <div class="links-container">
+        <a href="https://mail.google.com" class="link" id="gmail" target="_blank"><img src="gmail-logo.png" alt="Gmail">Gmail</a>
+        <a href="https://news.google.com" class="link" id="googlenews" target="_blank"><img src="google-news-logo.png" alt="Google News">Google News</a>
+        <a href="https://drive.google.com" class="link" id="googledrive" target="_blank"><img src="google-sheets-logo.png" alt="Google Sheets">Google Sheets</a>
+        <a href="https://www.reddit.com" class="link" id="reddit" target="_blank"><img src="reddit-logo.png" alt="Reddit">Reddit</a>
+        <a href="https://chat.openai.com" class="link" id="chatgpt" target="_blank"><img src="chatgpt-logo.png" alt="ChatGPT">ChatGPT</a>
+        <a href="https://www.amazon.com" class="link" id="amazon" target="_blank"><img src="amazon-logo.png" alt="Amazon">Amazon</a>
+        <a href="https://messages.google.com/web/conversations" class="link" id="googlemessages" target="_blank"><img src="google-messages-logo.png" alt="Google Messages">Google Messages</a>
+        <a href="https://calendar.google.com" class="link" id="googlecalendar" target="_blank"><img src="google-calendar-logo.png" alt="Google Calendar">Google Calendar</a>
+    </div>
+
+    <div class="main-container">
+        <iframe src="https://calendar.google.com/calendar/embed?height=300&wkst=1&ctz=America%2FLos_Angeles&bgcolor=%23ffffff&mode=AGENDA&showPrint=0&src=d2hvbHQwOEBnbWFpbC5jb20&src=OWFwNjdhNDBmdGNldm1rZjh1bXBzdDJ0aDBAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&src=Z2F2dmxodTRvZXJwZWR1cm9ydXRwaGpyNGNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&src=ZjNxbzBmbHRvZmw1NXNwdmZzM2ozOWxqZW9AZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&src=ZW4uaGluZHVpc20jaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&src=ZW4udXNhI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&src=ZW4uanVkYWlzbSNob2xpZGF5QGdyb3VwLnYuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&src=bmNhYWZfMzBfJTRkaWNoaWdhbislNTN0YXRlKyU1M3BhcnRhbnMjc3BvcnRzQGdyb3VwLnYuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&src=bnl0aW1lcy5jb21fODlhaTRpanBiNzMzZ3QyOHJnMjFkMmMyZWtAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&src=aHQzamxmYWFjNWxmZDYyNjN1bGZoNHRxbDhAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&src=YnJldDh2Y3Uzc3F0ZDRkaGZqaWJ2cXVrZWtla290dGRAaW1wb3J0LmNhbGVuZGFyLmdvb2dsZS5jb20&src=dDZpbGowanU4bHE1cGI5ODQ5cTY2dWwyODBAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&color=%23039BE5&color=%23AD1457&color=%23795548&color=%23EF6C00&color=%237CB342&color=%23009688&color=%234285F4&color=%23F09300&color=%23EF6C00&color=%23B39DDB&color=%23D81B60&color=%23F09300" style="border:solid 1px #777" width="500" height="300" frameborder="0" scrolling="no"></iframe>
+
+        <div class="search-container">
+            <form action="https://www.google.com/search" method="get" target="_blank">
+                <input type="text" placeholder="Search Google" name="q">
+                <button type="submit">Search</button>
+            </form>
+        </div>
+    </div>
+    
+    <!--To Do List
+    <div class="todo-list" id="todoList">
+        <input type="text" id="todoInput">
+        <button onclick="addTodo()">Add Task</button>
+        <ul id="todoItems"></ul>
+    </div>-->
+
+</body>
+</html>
